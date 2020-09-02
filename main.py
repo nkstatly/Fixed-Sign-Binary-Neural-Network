@@ -183,7 +183,7 @@ if __name__ == '__main__':
             model = resnet.ResNet(args)
     else:
         model = make_model(args)
-    shutil.copyfile('./bnn_dict.pth', os.path.join(save_path, 'bnn_dict.pth'))
+#     shutil.copyfile('./bnn_dict.pth', os.path.join(save_path, 'bnn_dict.pth'))
     
     criterion = nn.CrossEntropyLoss()
     criterion.type(args.type)
